@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 05e8726442dab41e1aa51a281695ba4f
+  productGUID: a959f11b4840d49269e4192917555e27
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -617,8 +617,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: a611c727-c35a-480e-8605-67ec89a5da98
-  projectName: unity-tinkering
+  cloudProjectId: 3be1a747-dcb8-4b08-9d5f-4c879bc27246
+  projectName: unity-tinkering (1)
   organizationId: wtanaka
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
