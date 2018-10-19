@@ -1,0 +1,14 @@
+language: android
+services:
+- docker
+script:
+- >
+  docker run -v "$(pwd):/root/project" wtanaka/unity3d
+  /opt/Unity/Editor/Unity
+  -batchmode
+  -nographics
+  -logFile build.log
+  -projectPath /root/project
+  -buildLinuxUniversalPlayer "$(pwd)/Build/linux/$project.exe"
+  -quit
+- cat build.log
