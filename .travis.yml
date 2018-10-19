@@ -1,0 +1,19 @@
+language: android
+services:
+- docker
+script:
+- >
+  docker run
+  --rm
+  -e "HOSTUID=`id -u`"
+  -e "HOSTGID=`id -g`"
+  -v "$(pwd):/work"
+  wtanaka/unity3d:2018.2.7f1
+  /opt/Unity/Editor/Unity
+  -quit
+  -batchmode
+  -nographics
+  -executeMethod WebGLBuilder.build
+  -logFile /work/build.log
+  -projectPath /work
+- cat build.log
